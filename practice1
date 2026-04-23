@@ -1,0 +1,212 @@
+talki@LordsComputer MINGW64 ~
+$ mkdir projects
+
+talki@LordsComputer MINGW64 ~
+$ cd projects
+
+talki@LordsComputer MINGW64 ~/projects
+$ git clone https://github.com/Lordleal3/my-first-repo.git
+Cloning into 'my-first-repo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+talki@LordsComputer MINGW64 ~/projects
+$ ls -la
+total 12
+drwxr-xr-x 1 talki 197609 0 Apr 22 18:29 ./
+drwxr-xr-x 1 talki 197609 0 Apr 22 18:28 ../
+drwxr-xr-x 1 talki 197609 0 Apr 22 18:29 my-first-repo/
+
+talki@LordsComputer MINGW64 ~/projects
+$ git init
+Initialized empty Git repository in C:/Users/talki/projects/.git/
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ pd
+bash: pd: command not found
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ pwd
+/c/Users/talki/projects
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ ls -la
+total 16
+drwxr-xr-x 1 talki 197609 0 Apr 22 18:32 ./
+drwxr-xr-x 1 talki 197609 0 Apr 22 18:28 ../
+drwxr-xr-x 1 talki 197609 0 Apr 22 18:32 .git/
+drwxr-xr-x 1 talki 197609 0 Apr 22 18:29 my-first-repo/
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        my-first-repo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ git add my-first-repo/
+warning: adding embedded git repository: my-first-repo
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> my-first-repo
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached my-first-repo
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ sit status
+bash: sit: command not found
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   my-first-repo
+
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ git commit -m "adding a new file for test"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'talki@LordsComputer.(none)')
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ jalealw.evans@gmail.com
+bash: jalealw.evans@gmail.com: command not found
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ ssh-keygen -t ed25519 -c jalealw.evans@gmail.com
+Too many arguments.
+usage: ssh-keygen [-q] [-a rounds] [-b bits] [-C comment] [-f output_keyfile]
+                  [-m format] [-N new_passphrase] [-O option]
+                  [-t ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa]
+                  [-w provider] [-Z cipher]
+       ssh-keygen -p [-a rounds] [-f keyfile] [-m format] [-N new_passphrase]
+                   [-P old_passphrase] [-Z cipher]
+       ssh-keygen -i [-f input_keyfile] [-m key_format]
+       ssh-keygen -e [-f input_keyfile] [-m key_format]
+       ssh-keygen -y [-f input_keyfile]
+       ssh-keygen -c [-a rounds] [-C comment] [-f keyfile] [-P passphrase]
+       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
+       ssh-keygen -B [-f input_keyfile]
+       ssh-keygen -D pkcs11
+       ssh-keygen -F hostname [-lv] [-f known_hosts_file]
+       ssh-keygen -H [-f known_hosts_file]
+       ssh-keygen -K [-a rounds] [-w provider]
+       ssh-keygen -R hostname [-f known_hosts_file]
+       ssh-keygen -r hostname [-g] [-f input_keyfile]
+       ssh-keygen -M generate [-O option] output_file
+       ssh-keygen -M screen [-f input_file] [-O option] output_file
+       ssh-keygen -I certificate_identity -s ca_key [-hU] [-D pkcs11_provider]
+                  [-n principals] [-O option] [-V validity_interval]
+                  [-z serial_number] file ...
+       ssh-keygen -L [-f input_keyfile]
+       ssh-keygen -A [-a rounds] [-f prefix_path]
+       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
+                  file ...
+       ssh-keygen -Q [-l] -f krl_file [file ...]
+       ssh-keygen -Y find-principals -s signature_file -f allowed_signers_file
+       ssh-keygen -Y match-principals -I signer_identity -f allowed_signers_file
+       ssh-keygen -Y check-novalidate -n namespace -s signature_file
+       ssh-keygen -Y sign -f key_file -n namespace file [-O option] ...
+       ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
+                  -n namespace -s signature_file [-r krl_file] [-O option]
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ git commit -m "adding a ne file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'talki@LordsComputer.(none)')
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ git config --global user.email jalealw.evans@gmail.com
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ git commit -m "adding a test file"
+[master (root-commit) c383eef] adding a test file
+ 1 file changed, 1 insertion(+)
+ create mode 160000 my-first-repo
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+talki@LordsComputer MINGW64 ~/projects (master)
+$ git checkout -B feature/lesson
+Switched to a new branch 'feature/lesson'
+
+talki@LordsComputer MINGW64 ~/projects (feature/lesson)
+$ touch test.txt
+
+talki@LordsComputer MINGW64 ~/projects (feature/lesson)
+$ git add test.txt
+
+talki@LordsComputer MINGW64 ~/projects (feature/lesson)
+$ git commit -m "add test.txt"
+[feature/lesson 7402252] add test.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+talki@LordsComputer MINGW64 ~/projects (feature/lesson)
+$ git push -u origin feature/lesson
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+talki@LordsComputer MINGW64 ~/projects (feature/lesson)
+$ git push -u future/lesson
+fatal: The current branch feature/lesson has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream future/lesson feature/lesson
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+talki@LordsComputer MINGW64 ~/projects (feature/lesson)
+$ git push --set-upstream future/lesson future/lesson
